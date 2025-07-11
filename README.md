@@ -1,19 +1,73 @@
-1.Set up a Flask backend with API routes to create short URLs, handle redirection, and fetch statistics.
+Flask URL Shortener API
 
-2.Designed database tables for URLs and click logs, including fields for shortcodes, timestamps, expiry, and click counts.
+A simple Flask-based URL shortener service with support for expiry, analytics (click tracking), and short code customization.
 
-3.Implemented unique shortcode generation supporting user-defined custom codes and automatic random codes.
+Features
 
-4.Added URL expiry feature by storing creation and expiration times and preventing redirection if expired.
+• Generate short links with optional custom shortcode
+• Set expiry time (default 30 minutes)
+• Redirect to original URL
+• Track click statistics: timestamp, referrer, location (default "Unknown")
+• MySQL database integration
 
-5.Tracked clicks by recording timestamp, referrer, and location data for each access to a short URL.
+Tech Stack
 
-6.Created a React frontend form to input original URL, custom shortcode, and validity duration.
+• Python Flask
+• MySQL
+• Flask-CORS
+• pytz (timezone handling)
 
-7.Used Axios in React to communicate with backend APIs for creating short URLs and fetching stats.
+Setup Instructions
 
-8.Styled the frontend with plain CSS, focusing on colored input borders, button hover effects, and clean layout.
+Clone or download the project.
 
-9.Centered the form on the page with proper spacing, white background, and subtle shadow for a neat appearance.
+Install dependencies:
+pip install flask flask-cors mysql-connector-python pytz
 
-10.Handled form submission and errors gracefully, preventing Enter key submission and showing alert messages for failures.
+Start the Flask server:
+python app.py
+
+Ensure MySQL is running and the database tables are created.
+
+Database Schema
+
+CREATE TABLE urls (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ long_url TEXT NOT NULL,
+ shortcode VARCHAR(20) UNIQUE NOT NULL,
+ created_at DATETIME NOT NULL,
+ expires_at DATETIME NOT NULL,
+ click_count INT DEFAULT 0
+);
+
+CREATE TABLE clicks (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ shortcode VARCHAR(20),
+ timestamp DATETIME,
+ referrer TEXT,
+ location TEXT
+);
+
+Logs & Images
+![Example Screenshot](logs/get1.png)
+![Example Screenshot](logs/get2.png)
+![Example Screenshot](logs/post1.png)
+
+
+Postman Collection (Optional)
+
+Export your Postman collection and place the .json file under:
+C:\Users\govag\Desktop\Yuvanesh\Affordmen\backend\logs\Postman_Collection.json
+
+Author
+
+Developed by Govarthan & Yuvanesh
+Location: C:\Users\govag\Desktop\Yuvanesh\Affordmen\backend
+
+Notes
+
+All times use IST (Asia/Kolkata) timezone
+
+Location is "Unknown" until IP geolocation is added
+
+Logging and screenshots can be saved in the /logs folder for analytics
