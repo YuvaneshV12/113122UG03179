@@ -61,7 +61,7 @@ C:\Users\govag\Desktop\Yuvanesh\Affordmen\backend\logs\Postman_Collection.json
 
 Author
 
-Developed by Govarthan & Yuvanesh
+Developed Yuvanesh
 Location: C:\Users\govag\Desktop\Yuvanesh\Affordmen\backend
 
 Notes
