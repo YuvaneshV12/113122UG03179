@@ -52,7 +52,8 @@ Logs & Images
 ![Example Screenshot](/backend/logs/get1.png)
 ![Example Screenshot](/backend/logs/get1.png)
 ![Example Screenshot](/backend/logs/get1.png)
-
+![Example Screenshot](/backend/logs/clicks.png)
+![Example Screenshot](/backend/logs/urls.png)
 
 Postman Collection (Optional)
 
