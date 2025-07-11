@@ -55,10 +55,6 @@ Logs & Images
 ![Example Screenshot](/backend/logs/clicks.png)
 ![Example Screenshot](/backend/logs/urls.png)
 
-Postman Collection (Optional)
-
-Export your Postman collection and place the .json file under:
-C:\Users\govag\Desktop\Yuvanesh\Affordmen\backend\logs\Postman_Collection.json
 
 Author
 
