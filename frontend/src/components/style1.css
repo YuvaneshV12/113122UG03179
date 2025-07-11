@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #e0f2ff, #f0e8ff);
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, label, li, div {
+  color: #000;
+}
+
+input {
+  color: #000;
+  background-color: #fff;
+}
+
+button {
+  color: inherit;
+}
+
+input[type="url"]:focus {
+  border-color: #ff70a6;
+  box-shadow: 0 0 5px rgba(255, 112, 166, 0.3);
+}
+
+input[type="text"]:focus {
+  border-color: #b180f5;
+  box-shadow: 0 0 5px rgba(177, 128, 245, 0.3);
+}
+
+input[type="number"]:focus {
+  border-color: #ffd166;
+  box-shadow: 0 0 5px rgba(255, 209, 102, 0.3);
+}
+
+input[type="url"],
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+}
+
+input[type="url"]:focus {
+  border-color: #ff70a6;
+  box-shadow: 0 0 5px rgba(255, 112, 166, 0.3);
+}
+
+input[type="text"]:focus {
+  border-color: #b180f5;
+  box-shadow: 0 0 5px rgba(177, 128, 245, 0.3);
+}
+
+input[type="number"]:focus {
+  border-color: #ffd166;
+  box-shadow: 0 0 5px rgba(255, 209, 102, 0.3);
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background-color: #4338ca;
+}
+
+button[type="button"] {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+
+button[type="button"]:hover {
+  background-color: #0284c7;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background-color: #4338ca;
+}
+
+button[type="button"] {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+
+button[type="button"]:hover {
+  background-color: #0284c7;
+}
