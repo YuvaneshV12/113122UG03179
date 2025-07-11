@@ -49,9 +49,9 @@ CREATE TABLE clicks (
 );
 
 Logs & Images
-![Example Screenshot](logs/get1.png)
-![Example Screenshot](logs/get2.png)
-![Example Screenshot](logs/post1.png)
+![Example Screenshot](/backend/logs/get1.png)
+![Example Screenshot](/backend/logs/get1.png)
+![Example Screenshot](/backend/logs/get1.png)
 
 
 Postman Collection (Optional)
